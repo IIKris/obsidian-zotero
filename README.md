@@ -20,7 +20,6 @@ A minimal, clean template for importing Zotero PDF annotations into Obsidian wit
 | 🔵 Blue `#2ea8e5` | Question | Blue |
 | ⚫ Other | Note | Gray |
 | 🟣 Images | Figure | Purple |
-| 🟠 Sticky notes | Memo (personal notes) | Orange |
 
 ## Prerequisites
 
