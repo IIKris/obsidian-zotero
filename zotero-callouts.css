@@ -1,0 +1,103 @@
+/* Zotero Annotation Callouts - Minimal Side Bar Style
+   
+   Installation:
+   1. Open Obsidian Settings → Appearance → CSS snippets
+   2. Click the folder icon to open the snippets folder
+   3. Save this file there as "zotero-callouts.css"
+   4. Toggle it on in Obsidian
+*/
+
+/* Base callout reset - remove box styling */
+.callout[data-callout="critical"],
+.callout[data-callout="definition"],
+.callout[data-callout="question"],
+.callout[data-callout="highlight"],
+.callout[data-callout="note"],
+.callout[data-callout="figure"],
+.callout[data-callout="memo"] {
+  background: transparent;
+  border: none;
+  border-left: 4px solid;
+  border-radius: 0;
+  padding: 0.3em 0 0.3em 1em;
+  margin: 0.8em 0;
+}
+
+/* Hide the callout title bar completely */
+.callout[data-callout="critical"] > .callout-title,
+.callout[data-callout="definition"] > .callout-title,
+.callout[data-callout="question"] > .callout-title,
+.callout[data-callout="highlight"] > .callout-title,
+.callout[data-callout="note"] > .callout-title,
+.callout[data-callout="figure"] > .callout-title,
+.callout[data-callout="memo"] > .callout-title {
+  display: none;
+}
+
+/* Color definitions matching Zotero highlight colors */
+
+/* Critical - Red (#ff6666) */
+.callout[data-callout="critical"] {
+  border-left-color: #ff6666;
+}
+
+/* Definition - Green (#5fb236) */
+.callout[data-callout="definition"] {
+  border-left-color: #5fb236;
+}
+
+/* Question - Blue (#2ea8e5) */
+.callout[data-callout="question"] {
+  border-left-color: #2ea8e5;
+}
+
+/* Highlight - Yellow (#ffd400) */
+.callout[data-callout="highlight"] {
+  border-left-color: #ffd400;
+}
+
+/* Note - Gray (default) */
+.callout[data-callout="note"] {
+  border-left-color: #888888;
+}
+
+/* Figure - Purple */
+.callout[data-callout="figure"] {
+  border-left-color: #a28ae5;
+}
+
+/* Memo (personal notes) - Orange */
+.callout[data-callout="memo"] {
+  border-left-color: #f19837;
+}
+
+/* Optional: subtle background tint on hover */
+.callout[data-callout="critical"]:hover { background: rgba(255, 102, 102, 0.05); }
+.callout[data-callout="definition"]:hover { background: rgba(95, 178, 54, 0.05); }
+.callout[data-callout="question"]:hover { background: rgba(46, 168, 229, 0.05); }
+.callout[data-callout="highlight"]:hover { background: rgba(255, 212, 0, 0.05); }
+.callout[data-callout="figure"]:hover { background: rgba(162, 138, 229, 0.05); }
+.callout[data-callout="memo"]:hover { background: rgba(241, 152, 55, 0.05); }
+
+/* Comments styling (italicized text within callouts) */
+.callout[data-callout="critical"] em,
+.callout[data-callout="definition"] em,
+.callout[data-callout="question"] em,
+.callout[data-callout="highlight"] em,
+.callout[data-callout="note"] em,
+.callout[data-callout="figure"] em,
+.callout[data-callout="memo"] em {
+  display: block;
+  margin-top: 0.5em;
+  opacity: 0.8;
+  font-size: 0.9em;
+}
+
+/* Page headers styling */
+.markdown-rendered h3 {
+  font-size: 0.95em;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: 0.3em;
+  margin-top: 1.5em;
+}
