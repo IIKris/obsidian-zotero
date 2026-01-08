@@ -13,8 +13,7 @@
 .callout[data-callout="question"],
 .callout[data-callout="highlight"],
 .callout[data-callout="note"],
-.callout[data-callout="figure"],
-.callout[data-callout="memo"] {
+.callout[data-callout="figure"] {
   background: transparent;
   border: none;
   border-left: 4px solid;
@@ -29,8 +28,7 @@
 .callout[data-callout="question"] > .callout-title,
 .callout[data-callout="highlight"] > .callout-title,
 .callout[data-callout="note"] > .callout-title,
-.callout[data-callout="figure"] > .callout-title,
-.callout[data-callout="memo"] > .callout-title {
+.callout[data-callout="figure"] > .callout-title {
   display: none;
 }
 
@@ -66,18 +64,12 @@
   border-left-color: #a28ae5;
 }
 
-/* Memo (personal notes) - Orange */
-.callout[data-callout="memo"] {
-  border-left-color: #f19837;
-}
-
 /* Optional: subtle background tint on hover */
 .callout[data-callout="critical"]:hover { background: rgba(255, 102, 102, 0.05); }
 .callout[data-callout="definition"]:hover { background: rgba(95, 178, 54, 0.05); }
 .callout[data-callout="question"]:hover { background: rgba(46, 168, 229, 0.05); }
 .callout[data-callout="highlight"]:hover { background: rgba(255, 212, 0, 0.05); }
 .callout[data-callout="figure"]:hover { background: rgba(162, 138, 229, 0.05); }
-.callout[data-callout="memo"]:hover { background: rgba(241, 152, 55, 0.05); }
 
 /* Comments styling (italicized text within callouts) */
 .callout[data-callout="critical"] em,
@@ -85,8 +77,7 @@
 .callout[data-callout="question"] em,
 .callout[data-callout="highlight"] em,
 .callout[data-callout="note"] em,
-.callout[data-callout="figure"] em,
-.callout[data-callout="memo"] em {
+.callout[data-callout="figure"] em {
   display: block;
   margin-top: 0.5em;
   opacity: 0.8;
